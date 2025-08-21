@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissors</title>
+    <link rel="stylesheet" href="R_P_S.css">
+</head>
+
+<body>
+    <div class="container">
+        <head>
+        <h1>Ready To Play! <br> Rock , Paper , Scissors</h1>
+    </head>
+
+    <main>
+        <p>The first one to win 3 rounds wins the game</p>
+        <div>
+            <h2>Player Score : <span id="player-score">0</span></h2>
+            <h2>Computer Score : <span id="computer-score">0</span></h2>
+        </div>
+
+        <div class="options-container">
+            <button onclick="showResults('Rock')">Rock🪨</button>
+            <button onclick="showResults('Paper')">Paper📃</button>
+            <button onclick="showResults('Scissors')">Scissors✂️</button>
+        </div>
+
+        <div class="results-container">
+            <button id="reset-game-btn" style="display: none;" onclick="resetGame()">Play Again</button>
+            <h3 id="results-msg"></h3>
+            <h3 id="winner-msg"></h3>
+        </div>
+
+    </main>
+    </div>
+</body>
+
+<script src="R_P_S.js "></script>
+</html>
